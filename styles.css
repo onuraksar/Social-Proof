@@ -1,0 +1,294 @@
+body {
+  text-align: center;
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+  background-image: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
+  background-position: left top, right bottom;
+  background-repeat: no-repeat, no-repeat;
+}
+
+
+.container-fluid {
+  padding: 100px 150px;
+
+}
+
+.section-first {
+  padding: 0px;
+}
+
+.heading {
+  color: hsl(303, 10%, 53%);
+  text-align: left;
+  font-weight: 500;
+  width: 65%;
+}
+
+.big-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  font-weight: bold;
+  color: hsl(300, 43%, 22%);
+}
+
+
+/* Ratings */
+.ratings {
+  background-color: hsl(300, 24%, 96%);
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  margin: 15px 0px 15px auto;
+  height: 60px;
+  width: 450px;
+  text-align: left;
+  padding: 20px 0px 20px 30px;
+  border-radius: 20px;
+}
+
+.rating-1 {
+  position: relative;
+  right: 100px;
+}
+
+.rating-2 {
+  position: relative;
+  right: 50px;
+}
+
+.rating-3 {
+  position: relative;
+}
+
+.fa-star {
+  color: #f0a500;
+  margin: 0px 3px;
+}
+
+.fa-star-rightmost {
+  margin-right: 20px;
+}
+
+/* Testimonials */
+.section-second {
+  padding-top: 30px;
+}
+
+.testimonial-col {
+  padding-top: 40px;
+  padding-bottom: 100px;
+
+}
+
+.card {
+  border-width: 10px;
+  border-style: solid;
+  border-color: hsl(300, 43%, 22%);
+  border-radius: 25px;
+}
+
+.card-leftmost {
+  margin-left: 0px;
+}
+
+.card-middle {
+  position: relative;
+  top: 30px;
+}
+
+.card-rightmost {
+  margin-right: 0px;
+  position: relative;
+  top: 60px;
+}
+
+.card-header {
+  background-color: hsl(300, 43%, 22%);
+  border: none;
+  padding: 40px 30px 0px;
+}
+
+.card-body {
+  background-color: hsl(300, 43%, 22%);
+  padding: 0px 30px 40px 30px;
+  border-radius: 55px:
+}
+
+.testimonial-info {
+  margin-left: 75px;
+  text-align: left;
+
+
+}
+
+.card-title {
+  color: hsl(300, 24%, 96%);
+}
+
+.card-subtitle {
+  color: hsl(333, 80%, 67%);
+}
+
+.card-text {
+  margin-top: 25px;
+  color: hsl(300, 24%, 96%);
+  text-align: left;
+}
+
+.card-img {
+  border-radius: 100%;
+  width: 50px;
+  float: left;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+footer {
+  padding-bottom: 20px;
+}
+
+/* Media Queries */
+/* General Lay-out for devices smaller than Desktops */
+@media only screen and (max-width: 1122px) and (min-width: 992px) {
+  .container-fluid {}
+
+  .card {
+    margin: auto;
+  }
+
+  .card-img {
+    float: none;
+    padding-bottom: 20px;
+  }
+
+  .testimonial-info {
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  .card-text {
+    text-align: center;
+  }
+}
+
+/* Tablet Size */
+@media only screen and (min-width:480px) and (max-width: 992px) {
+  .container-fluid {
+    padding: 100px 100px;
+  }
+
+  .heading {
+    text-align: center;
+    width: 100%;
+  }
+
+  .ratings-col {
+    padding: 30px 0px 40px;
+  }
+
+  .ratings {
+    height: 60px;
+    width: 450px;
+    padding: 20px 0px 0px;
+    text-align: center;
+  }
+
+  .card {
+    height: 130%;
+    font-size: 1.1rem;
+  }
+
+  .card-text {
+    /* margin-top: 30px; */
+  }
+
+  .card-middle {
+    position: static;
+  }
+
+  .ratings {
+    width: auto;
+    text-align: center;
+  }
+
+  .rating-1 {
+    position: static;
+  }
+
+  .rating-2 {
+    position: static;
+  }
+}
+
+/* Extra Adjusment for screens within Mid-Range */
+@media only screen and (max-width: 630px) {
+  .ratings {
+    width: auto;
+    text-align: center;
+    padding: 10px 0px 0px;
+  }
+
+  .stars {
+    display: block;
+    text-align: center;
+  }
+}
+
+/* Mobile Size */
+@media only screen and (max-width: 480px) {
+  body {
+    background-image: url("images/bg-pattern-top-mobile.svg"), url("images/bg-pattern-bottom-mobile.svg");
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+  }
+
+  .container-fluid {
+    padding: 100px 50px;
+  }
+
+  .ratings {
+    width: auto;
+    text-align: center;
+    padding: 10px 0px 0px;
+  }
+
+  .rating-1 {
+    position: static;
+  }
+
+  .rating-2 {
+    position: static;
+  }
+
+  .stars {
+    display: block;
+    text-align: center;
+  }
+
+  .review {
+    text-align: center;
+  }
+
+  .testimonial-col {
+    padding: 20px 0px;
+  }
+
+  .heading {
+    text-align: center;
+    width: 100%;
+  }
+
+  .card-middle {
+    position: static;
+  }
+
+  .card-rightmost {
+    position: static;
+  }
+}
